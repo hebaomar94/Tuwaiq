@@ -1,0 +1,67 @@
+
+//Tracking code 
+
+/*
+ 1- row = 0;
+ elementIndex = 0
+ str = ""
+ str = "jan..
+temp [row] = [30,24,21]
+ temp[row][elementIndex] = 30
+ str = " jan week1 "
+ str = " jan week1 " = 30 '
+ str = " jan week1 " = 30 , week2 = "
+ str = " jan week1 " = 30 , week2 = 32 "
+ */
+
+
+
+
+
+
+
+
+
+var temp = [
+[30,24,21],
+[32,23,18],
+[28,23,13]
+
+]
+
+var row = 0
+while (row < temp.count){
+//    print (temp[row][1])
+//
+    //WE NEED TO loop through all the element in one row and go next
+    
+    var elementIndex = 0
+    
+    var str = ""
+    if row == 0 {
+        str += "january: "
+    }else if row == 1 {
+        str += "Feb: "
+    }else {
+        str += "March: "
+    }
+    
+    
+    
+    
+    while (elementIndex < temp[row].count ){
+        str += "Week\(elementIndex+1) = "
+        let currentTemp = temp[row][elementIndex]
+        str += "\(currentTemp)"
+        
+        //print (temp[row][elementIndex])
+        print (str)
+        
+        elementIndex += 1
+    }
+    
+    row += 1
+    
+}
+
+
