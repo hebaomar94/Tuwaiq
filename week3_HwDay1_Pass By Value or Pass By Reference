@@ -1,1 +1,53 @@
+// struct
+struct PersonStruct: Runable {
+    func run() {
+        print ("running struct ")
+    }
+    
+    var name: String?
+    var age: Int?
+    var height: Double?
+    var weight: Double?
+}
+
+class PersonClass: Runable {
+    func run() {
+        print ("running class ")
+
+    }
+    
+    var name: String?
+    var age: Int?
+    var height: Double?
+    var weight: Double?
+}
+
+protocol Runable {
+    func run ()
+}
+
+//identify object from class
+var classPerson1 = PersonClass()
+classPerson1.name = "heba"
+
+var classPerson2 = classPerson1
+
+//the difference between pass refrences and pass value
+
+classPerson2.name = "soso"
+
+// object from struct
+var structPerson1 = PersonStruct()
+structPerson1.name = "omar"
+
+var structPerson2 = structPerson1
+
+//the difference between pass refrences and pass value
+ structPerson2.name = "zozo"
+
+print (classPerson1.name!,structPerson1.name!)
+print (classPerson2.name!,structPerson2.name!)
+
+//change the name of classperson1 to classperson2
+//pas by ref -> the location of classperson1 in memo equall the same location of class person2
 
