@@ -1,0 +1,20 @@
+var newStr: (String,String,String) -> String
+//calcSum = {
+//    (x,y) in
+//    return x + y
+//
+//}
+
+//newStr = {
+//    (a,b,c) in
+//    return ("\(a)+++\(b)+++\(c)")
+//}
+
+// print (newStr(a: "hello", b: "hereis", c: "heba"))
+
+func toWork (a: String,b:String,c:String) -> String{
+    return ("\(a) +++ \(b) +++ \(c)")
+}
+
+//toWork = newStr
+print (toWork(a: "hello", b: "hereis", c: "heba"))
