@@ -1,0 +1,22 @@
+////------------------------------Closures------------------------
+
+var calcSum: (Int, Int) -> Int
+//calcSum = {
+//    (x,y) in
+//    return x + y
+//
+//}
+
+
+func calc (x:Int, y:Int) -> Int {
+    return x + y
+}
+
+calcSum = calc
+
+print (calc(x: 10, y: 10))
+
+func sayHello (x: (Int, Int) -> Int ) {
+    x(1,2)
+}
+print (sayHello(x: calcSum))
