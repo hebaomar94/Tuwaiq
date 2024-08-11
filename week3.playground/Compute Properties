@@ -1,0 +1,15 @@
+////=====================Compute property=====================
+
+var firstName = "Heba"
+var lastName = "Omar"
+var name = firstName + " " + lastName
+
+// if i changed first name thats not effect because here is stored value in memory not change to new value like
+
+firstName = "omar" //so its muted not use !! so here i need to use compute properties
+
+var nameComput = firstName + " " + lastName
+
+
+print (name)
+print (nameComput)
