@@ -8,7 +8,9 @@ var name = firstName + " " + lastName
 
 firstName = "omar" //so its muted not use !! so here i need to use compute properties
 
-var nameComput = firstName + " " + lastName
+var nameComput: String {
+    return firstName + " " + lastName
+}
 
 
 print (name)
