@@ -13,5 +13,7 @@ var nameComput: String {
 }
 
 
-print (name)
-print (nameComput)
+print (name) // heba omar
+print (nameComput) // omar omar
+lastName = "Mohamed"
+print (nameComput) // omar mohamed 
