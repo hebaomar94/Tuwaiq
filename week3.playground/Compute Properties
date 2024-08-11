@@ -17,3 +17,20 @@ print (name) // heba omar
 print (nameComput) // omar omar
 lastName = "Mohamed"
 print (nameComput) // omar mohamed 
+
+
+////=====================Compute property with array =====================
+
+var arr = [1,2,3,4,5,6]
+
+var arrComp: [Int] {
+    var myArr: [Int] = []
+    for i in arr {
+        myArr.append( i * 10)
+    }
+    return myArr
+}
+print (arr)
+print (arrComp)
+
+arr = [6,7,9]
