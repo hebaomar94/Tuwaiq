@@ -1,0 +1,52 @@
+//enum Directions {
+//    case up
+//    case right
+//    case left
+//    case down
+//}
+//
+//
+//func getArrow(direction: Directions) -> String {
+//    
+//    
+//    switch direction {
+//    case .up :
+//         return "^"
+//        
+//    case .right :
+//        return ">"
+//        
+//    case .left:
+//        return "<"
+//        
+//    case .down:
+//        return "v"
+////    default:
+////        print ("go to with these direct ")
+//        
+//    }
+//     
+//}
+//var direction1 = getArrow(direction: .up)
+//print (direction1)
+
+
+//anotherway
+enum Directions: String {
+    case up = "^"
+    case right = ">"
+    case left = "<"
+    case down = "v"
+}
+
+
+func getArrow(direction: Directions) -> String {
+    
+    return direction.rawValue
+//    default:
+//        print ("go to with these direct ")
+        
+    }
+     
+var direction1 = getArrow(direction: .up)
+print (direction1)
