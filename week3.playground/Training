@@ -8,7 +8,7 @@
 //
 //func getArrow(direction: Directions) -> String {
 //    
-//    
+    
 //    switch direction {
 //    case .up :
 //         return "^"
