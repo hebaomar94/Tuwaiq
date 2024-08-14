@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FkR-Vv-ACU">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New View Controller-->
+        <scene sceneID="bCP-BG-2HK">
+            <objects>
+                <viewController id="FkR-Vv-ACU" customClass="NewViewController" customModule="TuwiqMyfirstProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gmU-oi-YgM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Num1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6Q-rY-RmN">
+                                <rect key="frame" x="73" y="111" width="231" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Num2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-8u-jDm">
+                                <rect key="frame" x="73" y="188" width="231" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-Zj-zbQ">
+                                <rect key="frame" x="138" y="283" width="117" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="ntX-NL-XgS"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Clicked:" destination="FkR-Vv-ACU" eventType="touchUpInside" id="jRL-DA-AFT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQ2-QW-EA8">
+                                <rect key="frame" x="141.66666666666666" y="477" width="109.66666666666666" height="45.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7WA-Gl-md2"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="BD7-8u-jDm" firstAttribute="top" secondItem="n6Q-rY-RmN" secondAttribute="bottom" constant="43" id="11z-0x-rRh"/>
+                            <constraint firstItem="hRy-Zj-zbQ" firstAttribute="top" secondItem="BD7-8u-jDm" secondAttribute="bottom" constant="61" id="14K-jW-2oL"/>
+                            <constraint firstItem="n6Q-rY-RmN" firstAttribute="leading" secondItem="7WA-Gl-md2" secondAttribute="leading" constant="73" id="53p-Bc-g1Z"/>
+                            <constraint firstItem="n6Q-rY-RmN" firstAttribute="top" secondItem="7WA-Gl-md2" secondAttribute="top" constant="52" id="G4b-XC-voP"/>
+                            <constraint firstItem="n6Q-rY-RmN" firstAttribute="leading" secondItem="BD7-8u-jDm" secondAttribute="leading" id="HXA-Wa-dzc"/>
+                            <constraint firstItem="7WA-Gl-md2" firstAttribute="trailing" secondItem="n6Q-rY-RmN" secondAttribute="trailing" constant="89" id="Hb6-Y7-7S9"/>
+                            <constraint firstItem="CQ2-QW-EA8" firstAttribute="centerX" secondItem="hRy-Zj-zbQ" secondAttribute="centerX" id="RDP-EJ-bHI"/>
+                            <constraint firstItem="hRy-Zj-zbQ" firstAttribute="centerX" secondItem="gmU-oi-YgM" secondAttribute="centerX" id="YkQ-UN-def"/>
+                            <constraint firstItem="n6Q-rY-RmN" firstAttribute="trailing" secondItem="BD7-8u-jDm" secondAttribute="trailing" id="bNc-2L-Eew"/>
+                            <constraint firstItem="hRy-Zj-zbQ" firstAttribute="leading" secondItem="7WA-Gl-md2" secondAttribute="leading" constant="138" id="jhL-3u-oYK"/>
+                            <constraint firstItem="CQ2-QW-EA8" firstAttribute="top" secondItem="hRy-Zj-zbQ" secondAttribute="bottom" constant="129" id="u5y-qo-s7Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Clicked" destination="hRy-Zj-zbQ" id="fmp-g6-PhY"/>
+                        <outlet property="Result" destination="CQ2-QW-EA8" id="5iD-W1-yhN"/>
+                        <outlet property="TextLabel1" destination="n6Q-rY-RmN" id="0qW-Jn-hav"/>
+                        <outlet property="TextLabel2" destination="BD7-8u-jDm" id="8BC-P4-Pda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGW-gW-gYh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535.1145038167939" y="7.746478873239437"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
