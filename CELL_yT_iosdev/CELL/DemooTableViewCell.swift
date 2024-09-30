@@ -8,6 +8,7 @@
 import UIKit
 
 class DemooTableViewCell: UITableViewCell {
+
     
     
     @IBOutlet var myLabel:UILabel!
